@@ -13,6 +13,7 @@ jobs:
 
     - name: Build Image
       run: |
+        Copy-Item "C:/Windows/Fonts/msyh*.ttc" .
         docker build -t forewing/texlive-windows-container:latest .
 
     # - name: Publish Image
