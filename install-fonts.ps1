@@ -1,1 +1,4 @@
-New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Calibri (TrueType)' -PropertyType String -Value calibri.ttf
+New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Microsoft YaHei & Microsoft YaHei UI (TrueType)' -PropertyType String -Value msyh.ttc
+New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Microsoft YaHei Bold & Microsoft YaHei UI Bold (TrueType)' -PropertyType String -Value msyhbd.ttc
+New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Microsoft YaHei Light & Microsoft YaHei UI Light (TrueType)' -PropertyType String -Value msyhl.ttc
+Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts"
